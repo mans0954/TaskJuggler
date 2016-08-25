@@ -1,0 +1,107 @@
+tj3(1) -- schedules tj3 projects and generates reports
+======================================================
+
+## SYNOPSIS
+
+`tj3` [<options>] <file><br>
+`tj3` `--help`<br>
+`tj3` `--version`
+
+## OPTIONS
+
+*	`--config` <FILE>:
+	Use the specified YAML configuration file
+
+*	`--silent`:
+	Don't show program and progress information
+
+*	`--no-color`:
+	Don't use ANSI contol sequences to color the
+	terminal output. Colors should only be used when
+	spooling to an ANSI terminal. In case the detection
+	fails, you can this option to force colors to be
+	off.
+
+*	`--debug`:
+	Enable Ruby debug mode
+
+*	`--debuglevel` <N>:
+	Verbosity of debug output
+
+*	`--debugmodules` x,y,z:
+	Restrict debug output to a list of modules
+
+*	`--freeze`:
+	Generate or update the booking file for the
+	project. The file will have the same base name as
+	the project file but has a -bookings.tji extension.
+
+*	`--freezedate` <date>:
+	Use a different date than the current momentas
+	cut-off date for the booking file
+
+*	`--freezebytask`:
+	Group the bookings in the booking file generated
+	during a freeze by task instead of by resource.
+
+*	`--check-time-sheet` <tji-file>:
+	Check the given time sheet
+
+*	`--check-status-sheet` <tji-file>:
+	Check the given status sheet
+
+*	`--warn-ts-deltas`:
+	Turn on warnings for requested changes in time
+	sheets
+
+*	`--check-syntax`:
+	Only parse the input files and check the syntax.
+
+*	`--no-reports`:
+	Just schedule the project, but don't generate any
+	reports.
+
+*	`--list-reports` <report ID regular expression>:
+	List id, formats and file name of all the defined
+	reports that have IDs that match the specified
+	regular expression.
+
+*	`--report` <report ID>:
+	Only generate the report with the specified ID.
+	This option can be used multiple times.
+
+*	`--reports` <report ID regular expression>:
+	Only generate the reports that have IDs that match
+	the specified regular expression. This option can
+	be used multiple times.
+
+*	`-f`, `--force-reports`:
+	Generate reports despite scheduling errors
+
+*	`--add-trace`:
+	Append a current data set to all trace reports.
+
+*	`--abort-on-warnings`:
+	Abort program on warnings like we do on errors.
+
+*	`-o` <directory>, `--output-dir` <directory>:
+	Directory the reports should go into
+
+*	`-c` <N>:
+	Maximum number of CPU cores to use
+
+*	`-h`, `--help`:
+	Show usage information
+
+*	`--version`:
+	Show version info
+
+##ENVIRONMENT
+
+*	TASKJUGGLER_DATA_PATH
+	Override the path to the TaskJuggler data folder.
+	The data folder contains the css, icons and scripts
+	for TaskJuggler reports.
+
+*	TZ
+	The POSIX Time Zone environment variable.
