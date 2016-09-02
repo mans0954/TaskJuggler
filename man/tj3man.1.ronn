@@ -8,8 +8,10 @@ tj3man(1) -- get documentation for TaskJuggler keywords or generate user manual
 
 ## DESCRIPTION 
 
-This program can be used to generate the user manual in HTML format or to get
-a textual help for individual keywords.
+This program can be used to generate or display the user manual in HTML format
+or to display help for individual keywords in textual or HTML format. HTML is
+displayed using the Firefox web browser by default, or another browser as 
+specified using the options.
 
 ## OPTIONS
 
