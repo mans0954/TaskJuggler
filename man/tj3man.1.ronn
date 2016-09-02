@@ -1,0 +1,69 @@
+tj3man(1) -- get documentation for TaskJuggler keywords or generate user manual
+===============================================================================
+
+## SYNOPSIS
+
+`tj3man` [<options>] 
+`tj3man` [<options>] [<context>].<keyword>
+
+## DESCRIPTION 
+
+This program can be used to generate the user manual in HTML format or to get
+a textual help for individual keywords.
+
+## OPTIONS
+
+*	`-c`, `--config` <FILE>:
+	Use the specified YAML configuration file
+
+*	`--silent`:
+	Don't show program and progress information
+
+*	`--no-color`:
+	Don't use ANSI contol sequences to color the
+        terminal output. Colors should only be used when
+        spooling to an ANSI terminal. In case the detection
+        fails, you can this option to force colors to be
+        off.
+
+*	`--debug`:
+	Enable Ruby debug mode
+
+*	`-d`, `--dir` <directory>:
+	directory to put the manual
+
+*	`--html`:
+	Show the user manual in your local web browser. By
+        default, Firefox is used or the brower specified
+        with the $BROWSER environment variable.
+
+*	`--browser` <command>:
+	Specify the command to start your web browser. The
+        default is 'firefox'.
+
+*	`-m`, `--manual`:
+	Generate the user manual into the current directory
+        or the directory specified with the -d option.
+
+*	`-h`, `--help`:
+	Display a help message
+
+*	`--version`:
+	Show version info
+
+## ENVIRONMENT
+
+*	`BROWSER`:
+	The web browser used to display the user manual as HTML.
+
+## EXAMPLES
+
+tj3man shift
+tj3man --html shift.timesheet
+tj3man --html
+
+
+## SEE ALSO
+
+tj3man(1)
+
