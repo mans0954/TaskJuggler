@@ -105,3 +105,7 @@ tj3(1) -- schedules tj3 projects and generates reports
 
 *	TZ
 	The POSIX Time Zone environment variable.
+
+##SEE ALSO
+
+tj3man(1)

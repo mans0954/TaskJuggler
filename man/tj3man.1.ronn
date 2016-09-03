@@ -67,5 +67,5 @@ tj3man --html
 
 ## SEE ALSO
 
-tj3man(1)
+tj3(1)
 
